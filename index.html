@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!--CSS LINK-->
+  <link rel="stylesheet" href="cssf/style.css">
+
+  <!--Montserrat Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+
+  <!--Fraunces Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
+  
+  <title>Gabrielle Chanel</title>
+
+</head>
+
+<body>
+
+  <div class="content">
+
+    <div class="image">
+      <!-- <img class="desktop" src="/images/image-product-desktop.jpg" alt="Gabrielle Essence Eau De Parfum"> -->
+      <picture>
+        <source media="(min-width: 640px)" srcset="./images/image-product-desktop.jpg" alt=""/>
+        <img src="/images/image-product-mobile.jpg" alt="Gabrielle Essence Eau De Parfum">
+      </picture>
+      
+    </div>
+    
+    <div class="typography montserrat">
+      <p class="perfume"> PERFUME </p>
+
+      <div class="fraunces gabrielle"><h1> Gabrielle Essence Eau De Parfum</h1>  </div>
+  
+      <p class="bod">
+        A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+        Perfumer-Creator for the House of CHANEL.
+      </p>
+      
+      <div class="pricing">
+        <h1 class="fraunces">$149.99</h1>
+        <strike>$169.99</strike>
+      </div>
+      
+      <button class="montserrat cart"><img src="/images/icon-cart.svg" alt=""> Add to Cart </button> 
+    </div>
+    
+
+  </div>
+
+  <footer id="footer" class="montserrat">
+    Challenge by&nbsp;<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by&nbsp;<a href="#">David Sudan</a>.
+  </footer>
+
+  <script src="/app/js/script.js"></script>
+</body>
+</html>
