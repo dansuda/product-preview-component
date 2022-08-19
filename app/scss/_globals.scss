@@ -1,0 +1,198 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, ::after {
+    box-sizing: border-box;
+}
+
+.image {
+    img{
+        display: flex;
+        max-width: 100%;
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+}
+
+//font classes
+
+.fraunces {
+    font-family: 'Fraunces', serif;
+}
+
+.montserrat {
+    font-family:'Montserrat', sans-serif;
+}
+
+.gabrielle {
+    font-size: 1rem;
+    color: $veryDarkBlue;
+}
+
+body {
+    margin: auto;
+    padding: 0px;
+    background-color: $cream;
+    font-weight: $regular;
+    font-size: $fontSize;
+    color: $veryDarkBlue;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.75rem 1rem;
+    width: 100%;
+    height: 100%;
+
+    .typography {
+        padding: 1.5rem;
+        max-width: 100%;
+        max-height:max-content;
+        //width: 21.5rem;
+        height: 23.25rem;
+        background-color: $white;
+        color: $darkGrayishBlue;
+        border-radius: 0 0 0.5rem 0.5rem;
+
+        h1 {
+            margin-top: 0.625rem;
+            margin-bottom: 1rem;
+            line-height: 1;
+        }
+
+        .perfume {
+            letter-spacing: 0.375rem;
+            margin: 0;
+            font-size: 12px;
+        }
+
+        .bod {
+            margin-top: 0;
+            margin-bottom: 1.75rem;
+            line-height: 1.6;
+        }
+    }
+    
+    .pricing {
+    
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.25rem;
+
+        h1{
+            color: $darkCyan;
+            margin-right: 1rem;
+            font-size: 2rem;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+    }
+
+    .cart {
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        width: 18.5rem;
+        height: 3rem;
+        background-color: $darkCyan;
+        color: $white;
+        font-weight: $bold;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-radius: 7px;
+        cursor: pointer;
+
+        img {
+            margin-right: 0.375rem;
+        }
+
+        &:hover {
+            background-color: $veryDarkBlue;
+        }
+    }
+}
+
+@media (min-width: 640px) {
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 1.75rem 1rem;
+        position: absolute;
+        margin: auto;
+        max-width: 100%;
+
+        .image {
+            img{
+                display: flex;
+                max-width: 100%;
+                height: 28.125rem;
+                border-radius: 0.5rem 0 0 0.5rem;
+            }
+        }
+        
+        .typography {
+            padding: 2.0625rem;
+            width: 18.75rem;
+            height: 28.125rem;
+            background-color: $white;
+            color: $darkGrayishBlue;
+            border-radius: 0 0.5rem 0.5rem 0;
+
+            h1 {
+                margin-top: 1.5rem;
+                margin-bottom: 1.5rem;
+                line-height: 1;
+            }
+
+            .bod {
+                margin-top: 0;
+                margin-bottom: 1.75rem;
+                line-height: 1.6;
+            }
+        }
+
+        .pricing {
+    
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+    
+            h1{
+                color: $darkCyan;
+                margin-right: 1rem;
+                font-size: 2rem;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+    
+        }
+    }
+
+}
+
+#footer {
+    position:fixed;
+    display: flex;
+    flex-direction: row;
+    font-size: 11px;
+    align-items: center;
+    justify-content: center;
+    bottom: 1rem;
+    width: 100%;
+
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+
+}
+
